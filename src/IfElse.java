@@ -1,8 +1,13 @@
+import java.util.Scanner;
+
 public class IfElse {
     public static void main(String[] args) {
         // IF
-        int a = 22;
-        int b = 22;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Insert a: ");
+        int a = sc.nextInt();
+        System.out.print("Insert b: ");
+        int b = sc.nextInt();
         if (a > b && b > 0) {
             System.out.println("a is bigger then  and b is positive");
         } else if (b > a && a > 0) {
