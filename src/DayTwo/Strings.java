@@ -9,7 +9,7 @@ public class Strings {
         String lowerCaseString = newString.toLowerCase();
         System.out.println(lowerCaseString);
 
-        if (lowerCaseString.toLowerCase().contains("world")){
+        if (lowerCaseString.toLowerCase().contains("world")) {
             System.out.println("Yes");
         } else {
             System.out.println("No");
@@ -20,7 +20,7 @@ public class Strings {
 
         System.out.println(original.replace("o", "a"));
 
-        System.out.println(specific ( original));
+        System.out.println(specific(original));
 
         System.out.println(original.substring(7, 12));
         System.out.println(original.indexOf("o"));
@@ -29,12 +29,14 @@ public class Strings {
         System.out.println(replaceWord(original, "Hello", "By"));
 
     }
-public static boolean specific (String word) {
+
+    public static boolean specific(String word) {
         return word.startsWith("Hello") && word.endsWith("World!");
 
-}
-public static String replaceWord (String word,String word1, String word2 ) {
+    }
+
+    public static String replaceWord(String word, String word1, String word2) {
         return word.replace(word1, word2);
-        }
+    }
 
 }
