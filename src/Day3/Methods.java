@@ -1,10 +1,14 @@
 package Day3;
 
 public class Methods {
+
+
+
     public static void main(String[] args) {
         int x = 4;
         int y = 5;
         getArea(x,y);
+        String2.printName("markajhdli", "post");
     }
     public static void getArea(int x, int y) {
         int z = x*y;
