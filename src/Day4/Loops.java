@@ -13,8 +13,8 @@ public class Loops {
 //        evenNumbers();
 //        multiply();
 //        System.out.println(rollDice());
-//        firstEven();
-//        skipFive();
+        firstEven();
+        skipFive();
         skipSix();
 
 
@@ -54,7 +54,7 @@ public class Loops {
     public static void evenNumbers() {
 
         for (int i = 2; i <= 20; i += 2) {
-            System.out.print(i + " ");
+            System.out.print("First even number is " + i + " ");
         }
         System.out.println("\n");
     }
@@ -66,38 +66,37 @@ public class Loops {
     }
 
     public static void firstEven() {
-        int []numbers = {2,4,5,7,4,9,10};
+        int[] numbers = {1, 3, 2, 4, 5, 7, 4, 9, 10};
+//        for (int nr : numbers) {}
         for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] % 2 != 0) {
+            if (numbers[i] % 2 == 0) {
 
-                System.out.println(numbers[i]);
+                System.out.println("First even number is " + numbers[i]);
                 break;
             }
         }
 
-        }
-
+    }
 
 
     public static void skipFive() {
-    for (int i = 1; i<=20; i++){
-        if (i % 2 != 0){
-            if (i== 5){
-                continue;
+        for (int i = 1; i <= 20; i++) {
+            if (i % 2 != 0) {
+                if (i % 5 == 0) {
+                    continue;
+                }
+                System.out.println(i);
             }
-            System.out.println(i);
         }
-    }
     }
 
     public static void skipSix() {
-        for (int i = 1; i <= 30; i++) {
-            if (i==6){
+        for (int i = 3; i <= 30; i += 3) {
+            if (i % 6 == 0) {
                 continue;
             }
             System.out.println(i + " * " + i + " = " + i * i);
         }
     }
-
 
 }
